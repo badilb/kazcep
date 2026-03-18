@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КазЦЭП — Казахстанский Центр Экологического Проектирования</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <nav class="container nav-box">
+        <a href="#" class="logo-area">
+            <img src="noroot.png" alt="КазЦЭП" class="logo-img">
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#about" data-i18n="nav-about">О нас</a></li>
+            <li><a href="#services" data-i18n="nav-services">Услуги</a></li>
+            <li><a href="#projects" data-i18n="nav-projects">Проекты</a></li>
+            <li><a href="#advantages" data-i18n="nav-adv">Преимущества</a></li>
+            <li><a href="#vendors" data-i18n="nav-vendors">Партнёры</a></li>
+            <li><a href="#contacts" class="nav-cta" data-i18n="nav-contacts">Контакты</a></li>
+        </ul>
+        <div class="header-right">
+            <div class="lang-switcher">
+                <button data-lang="ru">RU</button>
+                <button data-lang="kk">KZ</button>
+                <button data-lang="en">EN</button>
+            </div>
+            <button class="burger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="container hero-content">
+        <div class="hero-badge" data-i18n="hero-badge">Надёжный партнёр с 2012 года</div>
+        <h1 data-i18n="hero-title">Инжиниринг.<br>Строительство.<br>Экология.</h1>
+        <p data-i18n="hero-sub">Проектирование и строительство телекоммуникационной инфраструктуры, экологический консалтинг и IT-решения по всему Казахстану.</p>
+        <div class="hero-stats">
+            <div class="hstat"><span class="hnum">12+</span><span class="hlabel" data-i18n="stat-years">лет опыта</span></div>
+            <div class="hstat-divider"></div>
+            <div class="hstat"><span class="hnum">500+</span><span class="hlabel" data-i18n="stat-bs">проектов БС</span></div>
+            <div class="hstat-divider"></div>
+            <div class="hstat"><span class="hnum">1500+</span><span class="hlabel" data-i18n="stat-leg">легализаций</span></div>
+            <div class="hstat-divider"></div>
+            <div class="hstat"><span class="hnum">50+</span><span class="hlabel" data-i18n="stat-staff">сотрудников</span></div>
+        </div>
+        <div class="hero-actions">
+            <a href="#services" class="btn-primary" data-i18n="btn-services">Наши услуги</a>
+            <a href="#contacts" class="btn-ghost" data-i18n="btn-contact">Связаться</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint"><span></span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <div class="eyebrow" data-i18n="eyebrow-about">О компании</div>
+                <h2 data-i18n="about-title">ТОО «КазЦЭП»<br>— развиваемся ВМЕСТЕ!</h2>
+                <p data-i18n="about-desc1">На строительном рынке компания «КазЦЭП» работает более 12 лет. Накоплен огромный опыт в работах самого разного профиля по всей территории Республики Казахстан.</p>
+                <p data-i18n="about-desc2">Компания преуспела как в промышленном, так и в гражданском строительстве. Среди наших заказчиков — АО «КТЖ», KEGOC, BI Group, Huawei, Казахтелеком, Kcell, Beeline, Халык Банк, КазТрансГаз.</p>
+                <div class="about-licenses">
+                    <div class="lic-item">
+                        <i class="fas fa-certificate"></i>
+                        <span data-i18n="lic-1">Лицензия ПИР №13015116 — Проектная деятельность II категории</span>
+                    </div>
+                    <div class="lic-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <span data-i18n="lic-2">Лицензия СМР №13016592 — Строительно-монтажные работы II категории</span>
+                    </div>
+                    <div class="lic-item">
+                        <i class="fas fa-leaf"></i>
+                        <span data-i18n="lic-3">Экологическая лицензия №01518Р — Охрана окружающей среды</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-resources">
+                <div class="res-card-grid">
+                    <div class="res-card">
+                        <div class="res-icon"><i class="fas fa-users"></i></div>
+                        <div class="res-num">50+</div>
+                        <div class="res-label" data-i18n="res-staff">сотрудников<br><small>(10 проектировщиков TSSR)</small></div>
+                    </div>
+                    <div class="res-card">
+                        <div class="res-icon"><i class="fas fa-tools"></i></div>
+                        <div class="res-num">30+</div>
+                        <div class="res-label" data-i18n="res-teams">монтажных<br>бригад</div>
+                    </div>
+                    <div class="res-card">
+                        <div class="res-icon"><i class="fas fa-truck"></i></div>
+                        <div class="res-num">20+</div>
+                        <div class="res-label" data-i18n="res-tech">единиц<br>техники</div>
+                    </div>
+                    <div class="res-card">
+                        <div class="res-icon"><i class="fas fa-warehouse"></i></div>
+                        <div class="res-num">4</div>
+                        <div class="res-label" data-i18n="res-warehouses">склада<br>(Алматы, Астана, Шымкент, Атырау)</div>
+                    </div>
+                </div>
+                <div class="about-map-wrap">
+                    <div class="interactive-map">
+                        <img src="map.png" alt="Карта КазЦЭП" class="about-map">
+                        <!-- Астана -->
+                        <div class="map-pin" style="left:56%;top:28%;" data-city="astana">
+                            <div class="pin-dot"></div>
+                            <div class="pin-popup">
+                                <img src="office.png" alt="Офис Астана" class="pin-photo">
+                                <div class="pin-info">
+                                    <div class="pin-city">Астана</div>
+                                    <div class="pin-addr"><i class="fas fa-map-marker-alt"></i> ул. Кунаева 33, офис 903</div>
+                                    <div class="pin-phone"><i class="fas fa-phone"></i> +7 707 439 39 39</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Атырау -->
+                        <div class="map-pin" style="left:22%;top:44%;" data-city="atyrau">
+                            <div class="pin-dot"></div>
+                            <div class="pin-popup pin-popup-right">
+                                <img src="office.png" alt="Офис Атырау" class="pin-photo">
+                                <div class="pin-info">
+                                    <div class="pin-city">Атырау</div>
+                                    <div class="pin-addr"><i class="fas fa-map-marker-alt"></i> ул. Амандосова, 6а</div>
+                                    <div class="pin-phone"><i class="fas fa-phone"></i> +7 707 439 39 39</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Алматы -->
+                        <div class="map-pin" style="left:72%;top:68%;" data-city="almaty">
+                            <div class="pin-dot pin-dot-hq"></div>
+                            <div class="pin-popup pin-popup-top">
+                                <img src="office.png" alt="Офис Алматы" class="pin-photo">
+                                <div class="pin-info">
+                                    <div class="pin-city">Алматы <span class="pin-hq-badge">Головной</span></div>
+                                    <div class="pin-addr"><i class="fas fa-map-marker-alt"></i> ул. Тимирязева, 42/15</div>
+                                    <div class="pin-phone"><i class="fas fa-phone"></i> +7 701 731 10 63</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Шымкент -->
+                        <div class="map-pin" style="left:57%;top:74%;" data-city="shymkent">
+                            <div class="pin-dot"></div>
+                            <div class="pin-popup pin-popup-top pin-popup-left">
+                                <img src="office.png" alt="Офис Шымкент" class="pin-photo">
+                                <div class="pin-info">
+                                    <div class="pin-city">Шымкент</div>
+                                    <div class="pin-addr"><i class="fas fa-map-marker-alt"></i> ул. Сасбукаева, 149/1</div>
+                                    <div class="pin-phone"><i class="fas fa-phone"></i> +7 701 731 10 63</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-caption" data-i18n="map-caption">Нажмите на метку, чтобы увидеть офис</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section-services">
+    <div class="container">
+        <div class="section-header">
+            <div class="eyebrow" data-i18n="eyebrow-services">Что мы делаем</div>
+            <h2 data-i18n="sec-services">Направления деятельности</h2>
+        </div>
+        <div class="services-grid">
+            <div class="srv-card srv-main">
+                <div class="srv-number">01</div>
+                <div class="srv-icon"><i class="fas fa-tower-broadcast"></i></div>
+                <h3 data-i18n="srv-telecom">Телекоммуникации (MNO)</h3>
+                <p data-i18n="srv-telecom-desc">Проектирование и СМР базовых станций, антенно-мачтовых сооружений (АМС), ВОЛС. Легализация БС: предоставление ЗУ, оформление разрешений. 400+ выполненных проектов.</p>
+                <ul class="srv-list">
+                    <li data-i18n="srv-t1">Монтаж БС «под ключ» (LTE, 3G, 4G, 5G)</li>
+                    <li data-i18n="srv-t2">Строительство АМС любой сложности</li>
+                    <li data-i18n="srv-t3">Прокладка ВОЛС, поставка DWDM</li>
+                    <li data-i18n="srv-t4">Clean-up и техническое обслуживание</li>
+                </ul>
+            </div>
+            <div class="srv-card">
+                <div class="srv-number">02</div>
+                <div class="srv-icon"><i class="fas fa-leaf"></i></div>
+                <h3 data-i18n="srv-eco">Экология</h3>
+                <p data-i18n="srv-eco-desc">Охрана окружающей среды, экологическое консультирование и инжиниринг. Природоохранное проектирование для объектов I категории.</p>
+            </div>
+            <div class="srv-card">
+                <div class="srv-number">03</div>
+                <div class="srv-icon"><i class="fas fa-network-wired"></i></div>
+                <h3 data-i18n="srv-sks">Внутренние сети</h3>
+                <p data-i18n="srv-sks-desc">СКС, системы безопасности, видеонаблюдение и СКД под ключ. Фасадное освещение, системы «Умный дом». Банки, МЖК, промышленные объекты.</p>
+            </div>
+            <div class="srv-card">
+                <div class="srv-number">04</div>
+                <div class="srv-icon"><i class="fas fa-bolt"></i></div>
+                <h3 data-i18n="srv-energy">Электроснабжение</h3>
+                <p data-i18n="srv-energy-desc">Монтаж и реконструкция ЛЭП 0,4 кВ и 10 кВ. Внутренние электросети. Работы по стандартам World Bank Group.</p>
+            </div>
+            <div class="srv-card">
+                <div class="srv-number">05</div>
+                <div class="srv-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3 data-i18n="srv-it">IT-Решения</h3>
+                <p data-i18n="srv-it-desc">Собственная «Система координации подрядчиков» — цифровой инструмент управления проектами и подрядными организациями в режиме реального времени.</p>
+            </div>
+            <div class="srv-card">
+                <div class="srv-number">06</div>
+                <div class="srv-icon"><i class="fas fa-box-open"></i></div>
+                <h3 data-i18n="srv-supply">Поставки оборудования</h3>
+                <p data-i18n="srv-supply-desc">Прямые и партнёрские каналы поставок от Ericsson, Nokia, Huawei, ZTE. Телекоммуникационное оборудование: базовые станции, маршрутизаторы, DWDM, 5G-решения.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-projects">
+    <div class="container">
+        <div class="section-header light">
+            <div class="eyebrow" data-i18n="eyebrow-projects">Портфолио</div>
+            <h2 data-i18n="sec-projects">Реализованные проекты</h2>
+        </div>
+        <div class="projects-tabs">
+            <button class="tab-btn active" data-tab="telecom" data-i18n="tab-telecom">Телеком</button>
+            <button class="tab-btn" data-tab="infra" data-i18n="tab-infra">Инфраструктура</button>
+            <button class="tab-btn" data-tab="energy" data-i18n="tab-energy">Энергетика</button>
+        </div>
+        <div class="tab-content active" id="tab-telecom">
+            <div class="proj-grid">
+                <div class="proj-card big">
+                    <div class="proj-client">KarTel (Beeline)</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">500+</span>
+                        <span class="proj-unit" data-i18n="unit-sites">сайтов</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li data-i18n="proj-kartel-1">Монтаж БС (LTE, 3G) — 500 сайтов по всему Казахстану</li>
+                        <li data-i18n="proj-kartel-2">Монтаж новых БС «под ключ» — 10 сайтов</li>
+                        <li data-i18n="proj-kartel-3">Clean-up строительно-монтажные работы</li>
+                        <li data-i18n="proj-kartel-4">Полный цикл оформления разрешительных документов</li>
+                    </ul>
+                    <div class="proj-tags"><span>LTE</span><span>3G</span><span>Nationwide</span></div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-client">Huawei / Altel / Tele2</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">58</span>
+                        <span class="proj-unit" data-i18n="unit-bs">БС</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li data-i18n="proj-hw-1">Монтаж БС «под ключ» — 58 сайтов</li>
+                        <li data-i18n="proj-hw-2">Строительство АМС 18 м — 2 объекта</li>
+                        <li data-i18n="proj-hw-3">Clean-up на крышевых позициях и АМС — 89 сайтов</li>
+                        <li data-i18n="proj-hw-4">Модернизация и переход на новые стандарты связи</li>
+                    </ul>
+                    <div class="proj-tags"><span>Huawei</span><span>AMC</span><span>Clean-up</span></div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-client">Kcell</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">400+</span>
+                        <span class="proj-unit" data-i18n="unit-proj">проектов</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li data-i18n="proj-kcell-1">Проектирование и строительство БС</li>
+                        <li data-i18n="proj-kcell-2">Легализация площадок — Астана, Алматы, Актобе</li>
+                        <li data-i18n="proj-kcell-3">Кызылорда, Шымкент, Атырау и другие города</li>
+                    </ul>
+                    <div class="proj-tags"><span>Kcell</span><span>Легализация</span></div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-client">KazTransCom / ZTE</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">28</span>
+                        <span class="proj-unit" data-i18n="unit-nodes">узлов DWDM</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li data-i18n="proj-ktc-1">Установка 28 активных узлов DWDM (ZTE)</li>
+                        <li data-i18n="proj-ktc-2">Магистральная сеть MC-NET, Алматы–Актобе</li>
+                        <li data-i18n="proj-ktc-3">КПП Хоргос</li>
+                        <li data-i18n="proj-ktc-4">Проектирование и СМР ВОЛС</li>
+                    </ul>
+                    <div class="proj-tags"><span>DWDM</span><span>ZTE</span><span>ВОЛС</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="tab-infra">
+            <div class="proj-grid">
+                <div class="proj-card big">
+                    <div class="proj-client">BI Group</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">10+</span>
+                        <span class="proj-unit" data-i18n="unit-complexes">комплексов</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li>Central Avenue (1, 2, 3 очередь)</li>
+                        <li>4 YOU, Hyde Park (1, 2 очередь), Lake Town</li>
+                        <li>Dendropark, Альтаир, Grand Park, Клубный дом 39</li>
+                        <li>Tumar (Шымкент), Al-Farabi, NurOtan</li>
+                        <li data-i18n="proj-bi-covid">Инфекционный госпиталь (COVID-19)</li>
+                        <li>Aktau Riviera (1, 2 очередь) — г. Актау</li>
+                    </ul>
+                    <div class="proj-tags"><span>МЖК</span><span>СКС</span><span>Видеонаблюдение</span><span>СКД</span></div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-client">QazaqGaz (КазТрансГаз)</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">8600м</span>
+                        <span class="proj-unit" data-i18n="unit-cable">кабеля</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li data-i18n="proj-qg-1">Монтаж структурированной кабельной системы</li>
+                        <li data-i18n="proj-qg-2">Проложено 8600 м кабеля</li>
+                        <li data-i18n="proj-qg-3">Установлено 115 точек подключения</li>
+                    </ul>
+                    <div class="proj-tags"><span>СКС</span><span>QazaqGaz</span></div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-client">Банки (Jusan Mobile и др.)</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">10+</span>
+                        <span class="proj-unit" data-i18n="unit-projects2">проектов</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li data-i18n="proj-bank-1">Комплексное видеонаблюдение «под ключ»</li>
+                        <li data-i18n="proj-bank-2">Монтаж СКС и систем безопасности</li>
+                        <li data-i18n="proj-bank-3">Поставка и установка оборудования</li>
+                    </ul>
+                    <div class="proj-tags"><span>Банки</span><span>CCTV</span></div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-client">Казахтелеком</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">ШПД</span>
+                        <span class="proj-unit" data-i18n="unit-fttx">Павлодарская обл.</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li data-i18n="proj-kt-1">Развитие сети широкополосного доступа</li>
+                        <li data-i18n="proj-kt-2">Павлодарская ОДТ, охваченных ВОЛС-сетями</li>
+                    </ul>
+                    <div class="proj-tags"><span>ВОЛС</span><span>ШПД</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="tab-energy">
+            <div class="proj-grid">
+                <div class="proj-card big">
+                    <div class="proj-client">World Bank Group</div>
+                    <div class="proj-scope">
+                        <span class="proj-num">ЛЭП</span>
+                        <span class="proj-unit">0,4 кВ & 10 кВ</span>
+                    </div>
+                    <ul class="proj-details">
+                        <li data-i18n="proj-wb-1">Переустройство ЛЭП 0,4 кВ и 10 кВ</li>
+                        <li data-i18n="proj-wb-2">Реконструкция автодороги А2: Граница РУз (Ташкент) — Шымкент — Тараз — Алматы — Хоргос</li>
+                        <li data-i18n="proj-wb-3">Участок км 774 — км 806 (корректировка)</li>
+                    </ul>
+                    <div class="proj-tags"><span>ЛЭП</span><span>Реконструкция</span><span>World Bank</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section id="advantages" class="section-advantages">
+    <div class="container">
+        <div class="section-header">
+            <div class="eyebrow" data-i18n="eyebrow-adv">Почему мы</div>
+            <h2 data-i18n="sec-adv">Преимущества работы с нами</h2>
+        </div>
+        <div class="adv-grid">
+            <div class="adv-item">
+                <div class="adv-icon"><i class="fas fa-drafting-compass"></i></div>
+                <h4 data-i18n="adv-1-title">Проектная команда</h4>
+                <p data-i18n="adv-1-desc">Собственный отдел проектирования (II категория) для разработки рабочих проектов по разделам СС, ЭОМ, ОВиВК. 10 сертифицированных проектировщиков TSSR.</p>
+            </div>
+            <div class="adv-item">
+                <div class="adv-icon"><i class="fas fa-shield-alt"></i></div>
+                <h4 data-i18n="adv-2-title">Контроль качества</h4>
+                <p data-i18n="adv-2-desc">Отдел СМР (II категория) из ИТР обеспечивает контроль на всех этапах работ и проведение пусконаладки. Сертифицированный персонал.</p>
+            </div>
+            <div class="adv-item">
+                <div class="adv-icon"><i class="fas fa-mountain"></i></div>
+                <h4 data-i18n="adv-3-title">Промышленный альпинизм</h4>
+                <p data-i18n="adv-3-desc">Собственные бригады высотных монтажников с допусками по промышленной и электробезопасности. Работы на АМС и крышевых позициях.</p>
+            </div>
+            <div class="adv-item">
+                <div class="adv-icon"><i class="fas fa-project-diagram"></i></div>
+                <h4 data-i18n="adv-4-title">Управление проектами</h4>
+                <p data-i18n="adv-4-desc">Собственная «Система координации подрядчиков» — цифровой инструмент для поддержания стандартов и контроля процессов в реальном времени.</p>
+            </div>
+            <div class="adv-item">
+                <div class="adv-icon"><i class="fas fa-map-marked-alt"></i></div>
+                <h4 data-i18n="adv-5-title">Покрытие всего Казахстана</h4>
+                <p data-i18n="adv-5-desc">4 офиса и склада: Алматы (главный), Астана, Шымкент, Атырау. 30+ монтажных бригад готовы к выезду по всей стране.</p>
+            </div>
+            <div class="adv-item">
+                <div class="adv-icon"><i class="fas fa-handshake"></i></div>
+                <h4 data-i18n="adv-6-title">Сертифицированный партнёр</h4>
+                <p data-i18n="adv-6-desc">Официальный сертифицированный бизнес-партнёр BI Group. Прямые контракты с ведущими операторами и вендорами Казахстана.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VENDORS -->
+<section id="vendors" class="section-vendors">
+    <div class="container">
+        <div class="section-header light">
+            <div class="eyebrow" data-i18n="eyebrow-vendors">Экосистема</div>
+            <h2 data-i18n="sec-vendors">Вендоры и партнёры</h2>
+            <p data-i18n="vendors-sub">Прямые и партнёрские каналы поставок от ведущих мировых производителей</p>
+        </div>
+        <div class="vendors-logos">
+            <div class="vlogo"><img src="huawei.png" alt="Huawei"><span>Huawei</span></div>
+            <div class="vlogo"><img src="zte.png" alt="ZTE"><span>ZTE</span></div>
+            <div class="vlogo"><img src="nokia.png" alt="Nokia"><span>Nokia</span></div>
+            <div class="vlogo"><img src="ericson.png" alt="Ericsson"><span>Ericsson</span></div>
+            <div class="vlogo"><img src="bosch.png" alt="Bosch"><span>Bosch</span></div>
+            <div class="vlogo"><img src="stulz.png" alt="Stulz"><span>Stulz</span></div>
+            <div class="vlogo"><img src="legrand.png" alt="Legrand"><span>Legrand</span></div>
+            <div class="vlogo"><img src="bold.png" alt="Bold"><span>Bold</span></div>
+            <div class="vlogo"><img src="korf.png" alt="Korf"><span>Korf</span></div>
+        </div>
+        <p class="vendors-note" data-i18n="vendors-note">Представленные компании — лишь часть нашего партнёрского портфеля. Мы также работаем с другими проверенными вендорами из Европы, Азии и США.</p>
+    </div>
+</section>
+
+<!-- CONTACTS -->
+<footer id="contacts" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top-inner">
+                <div class="footer-brand">
+                    <img src="noroot.png" alt="КазЦЭП" class="footer-logo">
+                    <p data-i18n="footer-tagline">Надёжный партнёр в инжиниринге и экологическом проектировании</p>
+                    <div class="footer-contact-main">
+                        <a href="mailto:n.dairov@kazcep.kz"><i class="fas fa-envelope"></i> n.dairov@kazcep.kz</a>
+                        <a href="https://www.kazcep.kz"><i class="fas fa-globe"></i> www.kazcep.kz</a>
+                    </div>
+                    <div class="director-block">
+                        <div class="director-name" data-i18n="director-name">Нурлан Даиров</div>
+                        <div class="director-title" data-i18n="director-title">Исполнительный директор</div>
+                        <a href="tel:+77074393939" class="director-phone">+7 707 439 39 39</a>
+                    </div>
+                </div>
+                <div class="footer-offices">
+                    <h3 data-i18n="footer-offices-title">Наши офисы</h3>
+                    <div class="offices-grid">
+                        <div class="office-card">
+                            <div class="office-city"><span data-i18n="city-almaty">Алматы</span> <span class="hq-badge" data-i18n="hq">Главный офис</span></div>
+                            <div class="office-addr"><i class="fas fa-map-marker-alt"></i> <span data-i18n="addr-almaty">ул. Тимирязева, 42/15</span></div>
+                            <div class="office-phone"><i class="fas fa-phone"></i> +7 701 731 10 63</div>
+                        </div>
+                        <div class="office-card">
+                            <div class="office-city" data-i18n="city-astana">Астана</div>
+                            <div class="office-addr"><i class="fas fa-map-marker-alt"></i> <span data-i18n="addr-astana">ул. Кунаева 33, БЦ «Астаналык», офис 903</span></div>
+                            <div class="office-phone"><i class="fas fa-phone"></i> +7 707 439 39 39</div>
+                        </div>
+                        <div class="office-card">
+                            <div class="office-city" data-i18n="city-atyrau">Атырау</div>
+                            <div class="office-addr"><i class="fas fa-map-marker-alt"></i> <span data-i18n="addr-atyrau">ул. Амандосова, 6а</span></div>
+                            <div class="office-phone"><i class="fas fa-phone"></i> +7 707 439 39 39</div>
+                        </div>
+                        <div class="office-card">
+                            <div class="office-city" data-i18n="city-shymkent">Шымкент</div>
+                            <div class="office-addr"><i class="fas fa-map-marker-alt"></i> <span data-i18n="addr-shymkent">ул. Сасбукаева, 149/1</span></div>
+                            <div class="office-phone"><i class="fas fa-phone"></i> +7 701 731 10 63</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2024 ТОО «КазЦЭП». <span data-i18n="footer-rights">Все права защищены.</span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
