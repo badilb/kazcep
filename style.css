@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Sans+Narrow:wght@700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 /* ===== TOKENS ===== */
 :root {
@@ -205,7 +205,7 @@ button { cursor: pointer; font-family: inherit; }
     50% { opacity: 0.3; }
 }
 .hero-content h1 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: clamp(2.8rem, 6vw, 5rem);
     font-weight: 900;
     color: var(--white);
@@ -1027,4 +1027,12 @@ button { cursor: pointer; font-family: inherit; }
     font-size: 10px;
     margin-top: 2px;
     flex-shrink: 0;
+}
+
+/* PT Sans Narrow — full Kazakh Cyrillic (ұ қ ң ғ ә ө) */
+h1, h2, h3, h4,
+.hero-content h1,
+.about-text h2,
+.section-header h2 {
+    font-family: 'PT Sans Narrow', sans-serif;
 }
