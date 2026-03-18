@@ -77,7 +77,7 @@ const i18n = {
     "lic-card-eco": "Экологическое проектирование и аудит",
     "lic-card-4": "Изыскательская деятельность",
     "lic-card-4-sub": "Геодезические и геологические работы",
-    "lic-download": "Открыть PDF",,
+    "lic-download": "Открыть PDF",
     "director-name": "Нурлан Даиров",
     "city-almaty": "Алматы", "addr-almaty": "ул. Тимирязева, 42/15",
     "city-astana": "Астана", "addr-astana": "ул. Кунаева 33, БЦ «Астаналык», офис 903",
@@ -156,7 +156,7 @@ const i18n = {
     "lic-card-eco": "Экологиялық жобалау және аудит",
     "lic-card-4": "Іздестіру қызметі",
     "lic-card-4-sub": "Геодезиялық және геологиялық жұмыстар",
-    "lic-download": "PDF ашу",,
+    "lic-download": "PDF ашу",
     "director-name": "Нурлан Даиров",
     "city-almaty": "Алматы", "addr-almaty": "Тимирязев к., 42/15",
     "city-astana": "Астана", "addr-astana": "Кунаев к. 33, «Астаналық» БО, 903 кеңсе",
@@ -235,7 +235,7 @@ const i18n = {
     "lic-card-eco": "Environmental design and audit",
     "lic-card-4": "Survey Activities",
     "lic-card-4-sub": "Geodetic and geological works",
-    "lic-download": "Open PDF",,
+    "lic-download": "Open PDF",
     "director-name": "Nurlan Dairov",
     "city-almaty": "Almaty", "addr-almaty": "Timiryazeva St., 42/15",
     "city-astana": "Astana", "addr-astana": "Kunayeva St. 33, Astanalyk BC, office 903",
@@ -318,5 +318,5 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('click', function() {
     document.querySelectorAll('.map-pin').forEach(function(p) { p.classList.remove('active'); });
   });
-
+  
 });
