@@ -35,6 +35,7 @@ const i18n = {
     "srv-supply": "Поставки оборудования", "srv-supply-desc": "Прямые каналы: Ericsson, Nokia, Huawei, ZTE. Базовые станции, DWDM, 5G-решения.",
     "eyebrow-projects": "Портфолио", "sec-projects": "Реализованные проекты",
     "tab-telecom": "Телеком", "tab-infra": "Инфраструктура", "tab-energy": "Энергетика",
+    "tab-photos": "Галерея",
     "unit-sites": "сайтов", "unit-bs": "БС", "unit-proj": "проектов", "unit-nodes": "узлов DWDM",
     "unit-complexes": "комплексов", "unit-cable": "кабеля", "unit-projects2": "проектов", "unit-fttx": "Павлодарская обл.",
     "proj-kartel-1": "Монтаж БС (LTE, 3G) — 500 сайтов по всему Казахстану",
@@ -117,6 +118,7 @@ const i18n = {
     "srv-supply": "Жабдықтар жеткізу", "srv-supply-desc": "Ericsson, Nokia, Huawei, ZTE тікелей арналары.",
     "eyebrow-projects": "Портфолио", "sec-projects": "Жүзеге асырылған жобалар",
     "tab-telecom": "Телеком", "tab-infra": "Инфрақұрылым", "tab-energy": "Энергетика",
+    "tab-photos": "Галерея",
     "unit-sites": "сайт", "unit-bs": "БС", "unit-proj": "жоба", "unit-nodes": "DWDM түйін",
     "unit-complexes": "кешен", "unit-cable": "кабель", "unit-projects2": "жоба", "unit-fttx": "Павлодар обл.",
     "proj-kartel-1": "БС монтажы (LTE, 3G) — 500 сайт, бүкіл Қазақстан",
@@ -197,6 +199,7 @@ const i18n = {
     "srv-supply": "Equipment Supply", "srv-supply-desc": "Direct channels: Ericsson, Nokia, Huawei, ZTE. BTS, DWDM, 5G.",
     "eyebrow-projects": "Portfolio", "sec-projects": "Completed Projects",
     "tab-telecom": "Telecom", "tab-infra": "Infrastructure", "tab-energy": "Energy",
+    "tab-photos": "Gallery",
     "unit-sites": "sites", "unit-bs": "BTS", "unit-proj": "projects", "unit-nodes": "DWDM nodes",
     "unit-complexes": "complexes", "unit-cable": "cable", "unit-projects2": "projects", "unit-fttx": "Pavlodar reg.",
     "proj-kartel-1": "BTS installation (LTE, 3G) — 500 sites across Kazakhstan",
@@ -322,4 +325,28 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.map-pin').forEach(function(p) { p.classList.remove('active'); });
   });
   
+});
+
+
+document.querySelectorAll('.gal-track').forEach(function(track) {
+  var cid = track.id.replace('gal-', '');
+  var slides = track.querySelectorAll('.gal-slide');
+  var current = 0;
+
+  function goTo(idx) {
+    if (idx < 0) idx = slides.length - 1;
+    if (idx >= slides.length) idx = 0;
+    current = idx;
+    track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+    track.closest('.gallery-block').querySelectorAll('.gal-dot')
+      .forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+  }
+
+  var block = track.closest('.gallery-block');
+  block.querySelector('.gal-prev').addEventListener('click', function() { goTo(current - 1); });
+  block.querySelector('.gal-next').addEventListener('click', function() { goTo(current + 1); });
+  block.querySelectorAll('.gal-dot').forEach(function(dot) {
+    dot.addEventListener('click', function() { goTo(+dot.getAttribute('data-idx')); });
+  });
+  setInterval(function() { goTo(current + 1); }, 4000);
 });
