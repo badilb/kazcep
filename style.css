@@ -1163,3 +1163,21 @@ h1, h2, h3, h4,
 .gal-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.25); border: none; cursor: pointer; transition: all 0.2s; padding: 0; }
 .gal-dot.active { background: var(--gold); width: 24px; border-radius: 4px; }
 @media (max-width: 768px) { .gal-slide img { height: 260px; } .gallery-block { padding: 20px; } }
+
+.section-gallery {
+    padding: 120px 0;
+    background: var(--white);
+}
+.section-gallery .gallery-block {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+}
+.section-gallery .gallery-title { color: var(--blue); }
+.section-gallery .gal-prev,
+.section-gallery .gal-next {
+    background: var(--blue-light);
+    border-color: var(--border);
+    color: var(--blue);
+}
+.section-gallery .gal-dot { background: rgba(10,31,110,0.2); }
+.section-gallery .gal-dot.active { background: var(--blue); }
