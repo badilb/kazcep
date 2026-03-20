@@ -85,7 +85,8 @@ const i18n = {
     "city-almaty": "Алматы", "addr-almaty": "ул. Тимирязева, 42/15",
     "city-astana": "Астана", "addr-astana": "ул. Кунаева 33, БЦ «Астаналык», офис 903",
     "city-atyrau": "Атырау", "addr-atyrau": "ул. Амандосова, 6а",
-    "city-shymkent": "Шымкент", "addr-shymkent": "Акмаржан улица, 4"
+    "city-shymkent": "Шымкент", "addr-shymkent": "Акмаржан улица, 4",
+    "sec-gallery": "Галерея",
   },
   kk: {
     "nav-about": "Біз туралы", "nav-services": "Қызметтер", "nav-projects": "Жобалар",
@@ -167,7 +168,9 @@ const i18n = {
     "city-almaty": "Алматы", "addr-almaty": "Тимирязев к., 42/15",
     "city-astana": "Астана", "addr-astana": "Кунаев к. 33, «Астаналық» БО, 903 кеңсе",
     "city-atyrau": "Атырау", "addr-atyrau": "Амандосов к., 6а",
-    "city-shymkent": "Шымкент", "addr-shymkent": "Акмаржан к., 4"
+    "city-shymkent": "Шымкент", "addr-shymkent": "Акмаржан к., 4",
+    "sec-gallery": "Галерея",
+
   },
   en: {
     "nav-about": "About", "nav-services": "Services", "nav-projects": "Projects",
@@ -249,7 +252,8 @@ const i18n = {
     "city-almaty": "Almaty", "addr-almaty": "Timiryazeva St., 42/15",
     "city-astana": "Astana", "addr-astana": "Kunayeva St. 33, Astanalyk BC, office 903",
     "city-atyrau": "Atyrau", "addr-atyrau": "Amandosova St., 6a",
-    "city-shymkent": "Shymkent", "addr-shymkent": "Akmarzhan St., 4"
+    "city-shymkent": "Shymkent", "addr-shymkent": "Akmarzhan St., 4",
+    "sec-gallery": "Gallery",
   }
 };
 
@@ -299,13 +303,14 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.tab-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
       var tab = btn.getAttribute('data-tab');
-      document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
-      document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+      var section = btn.closest('section');
+      section.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+      section.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
       btn.classList.add('active');
       var panel = document.getElementById('tab-' + tab);
       if (panel) panel.classList.add('active');
     });
-  });
+});
 
   // Close mobile menu on nav link click
   document.querySelectorAll('.nav-menu a').forEach(function(link) {
@@ -341,11 +346,11 @@ document.querySelectorAll('.gal-track').forEach(function(track) {
     if (idx >= slides.length) idx = 0;
     current = idx;
     track.style.transform = 'translateX(-' + (idx * 100) + '%)';
-    track.closest('.gallery-block').querySelectorAll('.gal-dot')
+    track.closest('.tab-content').querySelectorAll('.gal-dot')
       .forEach(function(d, i) { d.classList.toggle('active', i === idx); });
   }
 
-  var block = track.closest('.gallery-block');
+  var block = track.closest('.proj-card');
   block.querySelector('.gal-prev').addEventListener('click', function() { goTo(current - 1); });
   block.querySelector('.gal-next').addEventListener('click', function() { goTo(current + 1); });
   block.querySelectorAll('.gal-dot').forEach(function(dot) {

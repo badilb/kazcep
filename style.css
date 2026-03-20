@@ -1181,3 +1181,30 @@ h1, h2, h3, h4,
 }
 .section-gallery .gal-dot { background: rgba(10,31,110,0.2); }
 .section-gallery .gal-dot.active { background: var(--blue); }
+
+.gal-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+.gal-track-wrap { border-radius: 12px; }
+.gal-slide img { height: 500px; border-radius: 12px; }
+@media (max-width: 768px) { .gal-slide img { height: 260px; } }
+
+#projects {
+    padding-bottom: 0;
+}
+
+.proj-card .gal-slide img {
+    height: 260px;
+    border-radius: 8px;
+}
+.proj-card .gal-controls {
+    margin-top: 12px;
+}
+
+#gallery {
+    padding-top: 40px;
+}
