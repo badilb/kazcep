@@ -87,6 +87,10 @@ const i18n = {
     "city-atyrau": "Атырау", "addr-atyrau": "ул. Амандосова, 6а",
     "city-shymkent": "Шымкент", "addr-shymkent": "Акмаржан улица, 4",
     "sec-gallery": "Галерея",
+    "proj-tele2-title": "Монтаж БС (LTE, 5G) — 135 сайтов по всему Казахстану",
+    "proj-tele2-item2": "Монтаж новых БС «под ключ» — 47 сайтов",
+    "proj-tele2-item3": "Полный цикл оформления разрешительных документов",
+    "proj-tele2-period": "Период: май 2025 – апрель 2026",
   },
   kk: {
     "nav-about": "Біз туралы", "nav-services": "Қызметтер", "nav-projects": "Жобалар",
@@ -170,6 +174,10 @@ const i18n = {
     "city-atyrau": "Атырау", "addr-atyrau": "Амандосов к., 6а",
     "city-shymkent": "Шымкент", "addr-shymkent": "Акмаржан к., 4",
     "sec-gallery": "Галерея",
+    "proj-tele2-title": "БС монтажы (LTE, 5G) — бүкіл Қазақстан бойынша 135 сайт",
+    "proj-tele2-item2": "«Кілт» астындағы жаңа БС монтажы — 47 сайт",
+    "proj-tele2-item3": "Рұқсат құжаттарын ресімдеудің толық циклі",
+    "proj-tele2-period": "Кезең: мамыр 2025 – сәуір 2026",
 
   },
   en: {
@@ -254,6 +262,10 @@ const i18n = {
     "city-atyrau": "Atyrau", "addr-atyrau": "Amandosova St., 6a",
     "city-shymkent": "Shymkent", "addr-shymkent": "Akmarzhan St., 4",
     "sec-gallery": "Gallery",
+    "proj-tele2-title": "BTS Installation (LTE, 5G) — 135 sites across Kazakhstan",
+    "proj-tele2-item2": "Turnkey installation of new BTS — 47 sites",
+    "proj-tele2-item3": "Full cycle of permitting documentation",
+    "proj-tele2-period": "Period: May 2025 – April 2026",
   }
 };
 
